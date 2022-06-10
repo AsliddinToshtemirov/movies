@@ -1,7 +1,7 @@
 import 'package:movies/core/utils/constants.dart';
 import 'package:movies/domain/services/base_services.dart';
 import 'package:movies/domain/services/popular_service.dart';
-import 'package:movies/domain/services/movie.dart';
+import 'package:movies/data/models/movie.dart';
 
 class PopularRepository {
   final BaseService _popularService = PopularService();

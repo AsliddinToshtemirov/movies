@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:movies/core/api/api_response.dart';
 import 'package:movies/domain/repositoreis/popular_repository.dart';
-import 'package:movies/domain/services/movie.dart';
+import 'package:movies/data/models/movie.dart';
 
 class MainViewModel extends ChangeNotifier {
   ApiResponse _apiResponse = ApiResponse.initial("initial");

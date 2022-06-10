@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:glass_kit/glass_kit.dart';
 
-import '../../domain/services/movie.dart';
+import '../../data/models/movie.dart';
 
 class SmallItem extends StatelessWidget {
   final Movie movie;
