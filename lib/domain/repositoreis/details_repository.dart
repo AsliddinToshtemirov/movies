@@ -7,9 +7,10 @@ class DetailsRepository {
 
   Future<Details> fetchDetails(int movieId) async {
     dynamic response = await _detailsService.getResponse(movieId.toString());
-    final details = response as Details;
-
+    final details = Details.fromJson(response);
     print(response);
     return details;
   }
+
+
 }

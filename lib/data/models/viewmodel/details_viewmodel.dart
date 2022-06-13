@@ -19,10 +19,9 @@ class DetailsViewModel extends ChangeNotifier {
     try {
       Details details = await DetailsRepository().fetchDetails(movieId);
       _details = details;
-
-      ApiResponse.complated(_details);
+      _apiResponse = ApiResponse.complated(_details);
     } catch (e) {
-      ApiResponse.error(e.toString());
+      _apiResponse = ApiResponse.error(e.toString());
     }
     notifyListeners();
   }

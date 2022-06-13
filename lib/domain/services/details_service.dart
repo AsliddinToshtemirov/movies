@@ -10,10 +10,11 @@ import '../../core/utils/constants.dart';
 
 class DetailsService extends BaseService {
   dynamic responseJson;
+
   @override
   Future getResponse(String url) async {
     try {
-      final response = await http.get(Uri.parse(baseUrl + url + apiKey));
+      final response = await http.get(Uri.parse(baseUrl + "/" + url + apiKey));
       responseJson = returnResponse(response);
     } on SocketException {
       throw Exception("enternet error ");

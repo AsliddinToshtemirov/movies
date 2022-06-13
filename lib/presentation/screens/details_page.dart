@@ -45,10 +45,11 @@ class _DetailsPageState extends State<DetailsPage> {
             ));
           }
           if (data.response.status == Status.Initial) {
-            return initUi(data.details!);
+            return Container();
           }
-
-          if (data.response.status == Status.Complated) {}
+          if (data.response.status == Status.Complated) {
+            return initUi(data.response.data!);
+          }
           return Container(
             color: Colors.black,
             height: 30,
