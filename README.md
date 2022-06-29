@@ -21,3 +21,4 @@ Movies app using Api
 used api https://www.themoviedb.org/ 
 
 
+<img width="453" alt="image" src="https://user-images.githubusercontent.com/86294468/176386707-8dfed66b-fb8c-4f36-a0d4-969e4111dc80.png">
